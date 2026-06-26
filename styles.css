@@ -255,6 +255,12 @@ body {
   font-weight: 800;
   color: var(--white);
   font-variant-numeric: tabular-nums;
+  transition: transform 0.35s ease, color 0.35s ease;
+}
+
+.stat-num.stat-bump {
+  color: var(--neon-red);
+  transform: scale(1.06);
 }
 
 .stat-label {
