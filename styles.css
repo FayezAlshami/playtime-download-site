@@ -68,10 +68,32 @@ body {
   z-index: 2;
 }
 
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.site-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: .02em;
+}
+
+/* App icon — rounded corners like mobile app */
+.app-icon {
+  object-fit: cover;
+  border-radius: 22%;
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, .45),
+    0 0 0 1px rgba(255, 255, 255, .06);
+}
+
 .logo {
+  width: 44px;
   height: 44px;
-  width: auto;
-  object-fit: contain;
+  flex-shrink: 0;
 }
 
 /* ──────────────────────────────────────────
@@ -299,10 +321,13 @@ body {
 }
 
 .preview-logo {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  border-radius: 14px;
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 22%;
+  box-shadow:
+    0 6px 24px rgba(179, 5, 5, .28),
+    0 0 0 1px rgba(255, 255, 255, .08);
 }
 
 .preview-text {
