@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#070101" />
+  <meta name="description" content="حمّل تطبيق PlayTime على جهازك الأندرويد" />
+  <title>PlayTime — تحميل التطبيق</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <header class="site-header">
+    <div class="container">
+      <img src="logo.png" alt="PlayTime" class="logo" />
+    </div>
+  </header>
+
+  <main class="hero container">
+    <div class="hero-content">
+      <div class="badge">الإصدار الأحدث</div>
+      <h1 class="hero-title">حمّل تطبيق<br /><span class="accent">PlayTime</span></h1>
+      <p class="hero-desc">
+        نظام إدارة محترف لمتاجر الألعاب والترفيه.
+        متوفر الآن على أجهزة أندرويد.
+      </p>
+
+      <div class="download-card">
+        <div class="download-info">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+              <path d="M17.523 15.341a.5.5 0 0 0-.71.71c1.93 1.93 1.93 5.07 0 7 0 0 .71.71.71.71 2.34-2.34 2.34-6.07 0-8.42zm-11.05.71a.5.5 0 0 0-.71-.71c-2.34 2.34-2.34 6.07 0 8.42l.71-.71c-1.93-1.93-1.93-5.07 0-7zM12 2C8.69 2 6 4.69 6 8c0 2.97 2.04 5.44 4.77 6.16L10 16h4l-.77-1.84C15.96 13.44 18 10.97 18 8c0-3.31-2.69-6-6-6zm1 11h-2v-2h2v2zm0-4h-2V5h2v4z"/>
+            </svg>
+          </div>
+          <div class="platform-text">
+            <span class="platform-name">Android</span>
+            <span class="platform-size" id="apk-size">APK · ~80 MB</span>
+          </div>
+        </div>
+        <a href="https://api.play.nivx.org/api/app/download" class="btn-download" id="download-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          تحميل الآن
+        </a>
+      </div>
+
+      <div class="stats-bar" id="stats-bar">
+        <div class="stat-item">
+          <span class="stat-num" id="visit-count">—</span>
+          <span class="stat-label">زيارة</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" id="download-count">—</span>
+          <span class="stat-label">تحميل</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="phone-mockup" aria-hidden="true">
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <div class="app-preview">
+            <img src="logo.png" alt="" class="preview-logo" />
+            <span class="preview-text">PlayTime</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 PlayTime · جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
